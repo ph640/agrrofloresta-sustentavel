@@ -1,0 +1,186 @@
+/* Configurações Gerais e Cores que remetem à natureza */
+:root {
+    --primary-color: #1e4620; /* Verde escuro floresta */
+    --secondary-color: #8da14e; /* Verde oliva claro */
+    --accent-color: #d4a373; /* Tom terra / madeira */
+    --text-dark: #2b2d42;
+    --text-light: #f8f9fa;
+    --bg-light: #f4f6f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: var(--primary-color);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    color: var(--text-light);
+    font-size: 1.8rem;
+}
+
+.main-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-header nav ul li {
+    margin-left: 20px;
+}
+
+.main-header nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Seção Hero (Banner Principal) */
+.hero-section {
+    background: linear-gradient(rgba(30, 70, 32, 0.7), rgba(30, 70, 32, 0.9));
+    color: var(--text-light);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background-color: #c59262;
+}
+
+/* Seção de Informações Gerais */
+.info-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.info-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1rem;
+}
+
+blockquote {
+    font-style: italic;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Seção de Cards (Benefícios) */
+.cards-section {
+    padding: 60px 0;
+    background-color: var(--bg-light);
+}
+
+.cards-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--secondary-color);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Seção de Apelo à Ação / Final */
+.cta-section {
+    padding: 60px 0;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.cta-section h2 {
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+.main-footer {
+    background-color: #112912;
+    color: #a2a4a2;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
